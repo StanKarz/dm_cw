@@ -36,7 +36,6 @@ def lower_case(df):
 
 # Modify the dataframe df by replacing each characters which is not alphabetic or whitespace with a whitespace.
 def remove_non_alphabetic_chars(df):
-	# df.strings.str.replace('[^A-Za-z\s]', '')
 	df['OriginalTweet'] = df['OriginalTweet'].replace('[^a-zA-Z\s]', ' ', regex=True)
 	return df
 
