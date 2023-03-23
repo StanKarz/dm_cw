@@ -38,7 +38,6 @@ def kmeans(df, k):
     # data = df.values
     clf = KMeans(n_clusters=k, init='random').fit(df)
     labels = clf.labels_
-    
     y = pd.Series(labels)
     return y
     
